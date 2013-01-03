@@ -37,7 +37,7 @@
     <module name="UnusedImports"/>
     <module name="LineLength">
       <property name="severity" value="info"/>
-      <property name="max" value="120"/>
+      <property name="max" value="130"/>
     </module>
     <module name="MethodLength"/>
     <module name="ParameterNumber"/>
@@ -114,7 +114,10 @@
     <module name="WhitespaceAround"/>
   </module>
   <module name="JavadocPackage"/>
-  <module name="NewlineAtEndOfFile"/>
+  <module name="NewlineAtEndOfFile">
+    <property name="severity" value="ignore"/>
+    <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+  </module>
   <module name="Translation"/>
   <module name="FileLength"/>
   <module name="FileTabCharacter">
